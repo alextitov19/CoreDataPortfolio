@@ -32,9 +32,18 @@ class AccountController: UIViewController {
         }
     }
     
+    func changePassword() {
+        if(accounts[appDelegate.index!].password == currentPasswordTextField.text!) {
+            if(newPasswordTextField.text! == retypePasswordTextField.text!) {
+                NSLog("Password changed")
+                accounts[appDelegate.index!].password = newPasswordTextField.text!
+                appDelegate.saveContext()
+            }
+        }
+    }
     
     @IBAction func changePasswordButtonPresed(_ sender: UIButton) {
-        
+        changePassword()
     }
     
     @IBAction func deleteAccountButtonPressed(_ sender: UIButton) {
