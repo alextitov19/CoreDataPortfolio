@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52C72531244DF79300A54305 /* CDP_LoginWallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52C72530244DF79300A54305 /* CDP_LoginWallpaper.jpg */; };
+		52C72534244DF9C900A54305 /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C72532244DF9C900A54305 /* Account+CoreDataClass.swift */; };
+		52C72535244DF9C900A54305 /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C72533244DF9C900A54305 /* Account+CoreDataProperties.swift */; };
 		52CDBBCE244DEE2900E7C7F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CDBBCD244DEE2900E7C7F7 /* AppDelegate.swift */; };
 		52CDBBD0244DEE2900E7C7F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CDBBCF244DEE2900E7C7F7 /* SceneDelegate.swift */; };
 		52CDBBD2244DEE2900E7C7F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CDBBD1244DEE2900E7C7F7 /* ViewController.swift */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52C72530244DF79300A54305 /* CDP_LoginWallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CDP_LoginWallpaper.jpg; sourceTree = "<group>"; };
+		52C72532244DF9C900A54305 /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
+		52C72533244DF9C900A54305 /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		52CDBBCA244DEE2900E7C7F7 /* CoreDataPortfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataPortfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CDBBCD244DEE2900E7C7F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52CDBBCF244DEE2900E7C7F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +70,8 @@
 		52CDBBCC244DEE2900E7C7F7 /* CoreDataPortfolio */ = {
 			isa = PBXGroup;
 			children = (
+				52C72532244DF9C900A54305 /* Account+CoreDataClass.swift */,
+				52C72533244DF9C900A54305 /* Account+CoreDataProperties.swift */,
 				52CDBBCD244DEE2900E7C7F7 /* AppDelegate.swift */,
 				52CDBBE6244DEFAE00E7C7F7 /* Images */,
 				52CDBBCF244DEE2900E7C7F7 /* SceneDelegate.swift */,
@@ -98,6 +106,7 @@
 		52CDBBE6244DEFAE00E7C7F7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				52C72530244DF79300A54305 /* CDP_LoginWallpaper.jpg */,
 				52CDBBE7244DEFEF00E7C7F7 /* CDP_MainWallpaper.jpg */,
 			);
 			path = Images;
@@ -163,6 +172,7 @@
 			files = (
 				52CDBBDD244DEE2B00E7C7F7 /* LaunchScreen.storyboard in Resources */,
 				52CDBBDA244DEE2B00E7C7F7 /* Assets.xcassets in Resources */,
+				52C72531244DF79300A54305 /* CDP_LoginWallpaper.jpg in Resources */,
 				52CDBBD5244DEE2900E7C7F7 /* Main.storyboard in Resources */,
 				52CDBBEA244DF12900E7C7F7 /* Login.storyboard in Resources */,
 				52CDBBE8244DEFEF00E7C7F7 /* CDP_MainWallpaper.jpg in Resources */,
@@ -176,7 +186,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C72535244DF9C900A54305 /* Account+CoreDataProperties.swift in Sources */,
 				52CDBBD2244DEE2900E7C7F7 /* ViewController.swift in Sources */,
+				52C72534244DF9C900A54305 /* Account+CoreDataClass.swift in Sources */,
 				52CDBBCE244DEE2900E7C7F7 /* AppDelegate.swift in Sources */,
 				52CDBBD0244DEE2900E7C7F7 /* SceneDelegate.swift in Sources */,
 				52CDBBD8244DEE2A00E7C7F7 /* CoreDataPortfolio.xcdatamodeld in Sources */,
