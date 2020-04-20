@@ -9,9 +9,10 @@
 import UIKit
 
 class LoginController: UIViewController {
-   
+    
     @IBOutlet var usernameTextField: UITextField!
-     @IBOutlet var passwordTextField: UITextField!
+    @IBOutlet var passwordTextField: UITextField!
+
     
     private let appDelegate = UIApplication.shared.delegate as! AppDelegate
     private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -23,13 +24,13 @@ class LoginController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-         super.viewWillAppear(animated)
-         do {
-           accounts = try context.fetch(Account.fetchRequest())
-         } catch let error as NSError {
-           print("Could not fetch. \(error), \(error.userInfo)")
-         }
-       }
+        super.viewWillAppear(animated)
+        do {
+            accounts = try context.fetch(Account.fetchRequest())
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
+    }
     
     func addAccount() {
         let account = Account(entity: Account.entity(), insertInto: context)
@@ -49,10 +50,19 @@ class LoginController: UIViewController {
         }
     }
     
+    func showAccountVC() {
+        let storyboard = UIStoryboard(name: "Login", bundle: nil)
+               let vc = storyboard.instantiateViewController(withIdentifier: "AccountController") as UIViewController
+               vc.modalPresentationStyle = .fullScreen
+               present(vc, animated: true, completion: nil)
+    }
+    
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         loginAccount()
+        showAccountVC()
     }
     @IBAction func createAccountButtonPressed(_ sender: UIButton) {
         addAccount()
+        showAccountVC()
     }
 }

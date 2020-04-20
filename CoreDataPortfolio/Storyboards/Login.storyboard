@@ -80,8 +80,31 @@
             </objects>
             <point key="canvasLocation" x="-443.47826086956525" y="121.875"/>
         </scene>
+        <!--Account Controller-->
+        <scene sceneID="nbh-hm-rSc">
+            <objects>
+                <viewController storyboardIdentifier="AccountController" id="Dk3-bd-sdK" customClass="AccountController" customModule="CoreDataPortfolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ivp-J4-aDr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CDP_AccountWallpaper.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oDs-Ll-Ut8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="D2r-QY-dVU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ET4-x5-hf1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bnx-Jz-no5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="463.768115942029" y="126.5625"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="CDP_AccountWallpaper.jpg" width="237" height="512"/>
         <image name="CDP_LoginWallpaper.jpg" width="288" height="512"/>
     </resources>
 </document>
