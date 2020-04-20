@@ -46,6 +46,7 @@ class LoginController: UIViewController {
         for i in 0..<accounts.count {
             if(accounts[i].username == username && accounts[i].password == password) {
                 NSLog("Login successful")
+                appDelegate.index = i
             }
         }
     }
@@ -61,6 +62,7 @@ class LoginController: UIViewController {
         loginAccount()
         showAccountVC()
     }
+    
     @IBAction func createAccountButtonPressed(_ sender: UIButton) {
         addAccount()
         showAccountVC()
