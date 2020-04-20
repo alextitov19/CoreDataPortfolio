@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		52C72531244DF79300A54305 /* CDP_LoginWallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52C72530244DF79300A54305 /* CDP_LoginWallpaper.jpg */; };
 		52C72534244DF9C900A54305 /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C72532244DF9C900A54305 /* Account+CoreDataClass.swift */; };
-		52C72535244DF9C900A54305 /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C72533244DF9C900A54305 /* Account+CoreDataProperties.swift */; };
 		52C72537244E2DBC00A54305 /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C72536244E2DBC00A54305 /* AccountController.swift */; };
 		52C72539244E2E9E00A54305 /* CDP_AccountWallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52C72538244E2E9E00A54305 /* CDP_AccountWallpaper.jpg */; };
+		52C7253B244E3EC900A54305 /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7253A244E3EC900A54305 /* Account+CoreDataProperties.swift */; };
 		52CDBBCE244DEE2900E7C7F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CDBBCD244DEE2900E7C7F7 /* AppDelegate.swift */; };
 		52CDBBD0244DEE2900E7C7F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CDBBCF244DEE2900E7C7F7 /* SceneDelegate.swift */; };
 		52CDBBD2244DEE2900E7C7F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CDBBD1244DEE2900E7C7F7 /* ViewController.swift */; };
@@ -27,9 +27,9 @@
 /* Begin PBXFileReference section */
 		52C72530244DF79300A54305 /* CDP_LoginWallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CDP_LoginWallpaper.jpg; sourceTree = "<group>"; };
 		52C72532244DF9C900A54305 /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
-		52C72533244DF9C900A54305 /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		52C72536244E2DBC00A54305 /* AccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountController.swift; sourceTree = "<group>"; };
 		52C72538244E2E9E00A54305 /* CDP_AccountWallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CDP_AccountWallpaper.jpg; sourceTree = "<group>"; };
+		52C7253A244E3EC900A54305 /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		52CDBBCA244DEE2900E7C7F7 /* CoreDataPortfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataPortfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CDBBCD244DEE2900E7C7F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52CDBBCF244DEE2900E7C7F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				52C72532244DF9C900A54305 /* Account+CoreDataClass.swift */,
-				52C72533244DF9C900A54305 /* Account+CoreDataProperties.swift */,
+				52C7253A244E3EC900A54305 /* Account+CoreDataProperties.swift */,
 				52CDBBCD244DEE2900E7C7F7 /* AppDelegate.swift */,
 				52CDBBE6244DEFAE00E7C7F7 /* Images */,
 				52CDBBCF244DEE2900E7C7F7 /* SceneDelegate.swift */,
@@ -193,13 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52C72535244DF9C900A54305 /* Account+CoreDataProperties.swift in Sources */,
 				52CDBBD2244DEE2900E7C7F7 /* ViewController.swift in Sources */,
 				52C72534244DF9C900A54305 /* Account+CoreDataClass.swift in Sources */,
 				52C72537244E2DBC00A54305 /* AccountController.swift in Sources */,
 				52CDBBCE244DEE2900E7C7F7 /* AppDelegate.swift in Sources */,
 				52CDBBD0244DEE2900E7C7F7 /* SceneDelegate.swift in Sources */,
 				52CDBBD8244DEE2A00E7C7F7 /* CoreDataPortfolio.xcdatamodeld in Sources */,
+				52C7253B244E3EC900A54305 /* Account+CoreDataProperties.swift in Sources */,
 				52CDBBEC244DF14000E7C7F7 /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

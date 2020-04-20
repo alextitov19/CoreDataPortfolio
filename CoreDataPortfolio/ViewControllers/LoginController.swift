@@ -38,6 +38,7 @@ class LoginController: UIViewController {
         account.password = passwordTextField.text!
         appDelegate.saveContext()
         accounts.append(account)
+        showAccountVC()
     }
     
     func loginAccount() {
@@ -45,8 +46,9 @@ class LoginController: UIViewController {
         let password = passwordTextField.text!
         for i in 0..<accounts.count {
             if(accounts[i].username == username && accounts[i].password == password) {
-                NSLog("Login successful")
+                NSLog("Login successful, \(i)")
                 appDelegate.index = i
+                showAccountVC()
             }
         }
     }
@@ -59,12 +61,11 @@ class LoginController: UIViewController {
     }
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
+         NSLog(String(accounts.count))
         loginAccount()
-        showAccountVC()
     }
     
     @IBAction func createAccountButtonPressed(_ sender: UIButton) {
         addAccount()
-        showAccountVC()
     }
 }
