@@ -33,12 +33,13 @@ class AccountController: UIViewController {
     }
     
     func changePassword() {
-        if(accounts[appDelegate.index!].password == currentPasswordTextField.text!) {
-            if(newPasswordTextField.text! == retypePasswordTextField.text!) {
+        guard let currentPassword = currentPasswordTextField.text, !currentPassword.isEmpty, let newPassword = newPasswordTextField.text, !newPassword.isEmpty, let retypePassword = retypePasswordTextField.text, !retypePassword.isEmpty else {
+            return
+        }
+        if(accounts[appDelegate.index!].password == currentPassword && newPassword == retypePassword) {
                 NSLog("Password changed")
-                accounts[appDelegate.index!].password = newPasswordTextField.text!
+                accounts[appDelegate.index!].password = newPassword
                 appDelegate.saveContext()
-            }
         }
     }
     
