@@ -33,17 +33,22 @@ class LoginController: UIViewController {
     }
     
     func addAccount() {
+        guard let username = usernameTextField.text, !username.isEmpty, let password = passwordTextField.text, !password.isEmpty else {
+                   return
+               }
         let account = Account(entity: Account.entity(), insertInto: context)
-        account.username = usernameTextField.text!
-        account.password = passwordTextField.text!
-        appDelegate.saveContext()
+        account.username = username
+        account.password = password
         accounts.append(account)
+        appDelegate.index = accounts.count - 1
+        appDelegate.saveContext()
         showAccountVC()
     }
     
     func loginAccount() {
-        let username = usernameTextField.text!
-        let password = passwordTextField.text!
+        guard let username = usernameTextField.text, !username.isEmpty, let password = passwordTextField.text, !password.isEmpty else {
+            return
+        }
         for i in 0..<accounts.count {
             if(accounts[i].username == username && accounts[i].password == password) {
                 NSLog("Login successful, \(i)")
@@ -52,6 +57,8 @@ class LoginController: UIViewController {
             }
         }
     }
+    
+
     
     func showAccountVC() {
         let storyboard = UIStoryboard(name: "Login", bundle: nil)
