@@ -21,6 +21,12 @@ class ViewController: UIViewController {
         present(vc, animated: true, completion: nil)
     }
     
-
+    @IBAction func languagesButtonPressed(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Language", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "LanguageController") as UIViewController
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
+    }
+    
 }
 
