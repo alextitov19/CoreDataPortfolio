@@ -4,7 +4,13 @@
         <attribute name="password" attributeType="String"/>
         <attribute name="username" attributeType="String"/>
     </entity>
+    <entity name="Language" representedClassName=".Language" syncable="YES">
+        <attribute name="name" attributeType="String"/>
+        <attribute name="pic" attributeType="Binary"/>
+        <attribute name="year" attributeType="String"/>
+    </entity>
     <elements>
         <element name="Account" positionX="-63" positionY="-18" width="128" height="73"/>
+        <element name="Language" positionX="-63" positionY="0" width="128" height="88"/>
     </elements>
 </model>

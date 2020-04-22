@@ -2,7 +2,7 @@
 //  Account+CoreDataProperties.swift
 //  CoreDataPortfolio
 //
-//  Created by Test on 4/20/20.
+//  Created by Test on 4/22/20.
 //  Copyright © 2020 AlexTitovProductions. All rights reserved.
 //
 //

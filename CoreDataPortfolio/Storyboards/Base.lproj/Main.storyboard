@@ -39,6 +39,7 @@
                                 </state>
                                 <connections>
                                     <action selector="languagesButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KtY-w5-C6x"/>
+                                    <segue destination="Ndn-an-XYr" kind="show" id="GZ6-Jr-u3Q"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -49,6 +50,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+        <!--Language-->
+        <scene sceneID="TAU-rR-3hg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Language" id="Ndn-an-XYr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bi7-iF-f5K"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Abp-jN-w2E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="718" y="12"/>
         </scene>
     </scenes>
     <resources>
