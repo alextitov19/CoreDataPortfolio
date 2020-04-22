@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class AccountController: UIViewController {
     
@@ -37,9 +38,10 @@ class AccountController: UIViewController {
             return
         }
         if(accounts[appDelegate.index!].password == currentPassword && newPassword == retypePassword) {
-                NSLog("Password changed")
-                accounts[appDelegate.index!].password = newPassword
-                appDelegate.saveContext()
+            NSLog("Password changed")
+            accounts[appDelegate.index!].password = newPassword
+            appDelegate.saveContext()
+            showLoginVC()
         }
     }
     
@@ -55,17 +57,16 @@ class AccountController: UIViewController {
         NSLog(String(accounts.count))
         context.delete(accounts[appDelegate.index!])
         accounts.remove(at: appDelegate.index!)
-        appDelegate.saveContext() 
+        appDelegate.saveContext()
+        showLoginVC()
     }
     
     @IBAction func changePasswordButtonPresed(_ sender: UIButton) {
         changePassword()
-        showLoginVC()
     }
     
     @IBAction func deleteAccountButtonPressed(_ sender: UIButton) {
         deleteAccount()
-        showLoginVC()
     }
     
 }
