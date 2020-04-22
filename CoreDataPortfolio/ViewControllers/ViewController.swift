@@ -27,6 +27,12 @@ class ViewController: UIViewController {
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true, completion: nil)
     }
+    @IBAction func booksButtonPressed(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Book", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "BookController") as UIViewController
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
+    }
     
 }
 

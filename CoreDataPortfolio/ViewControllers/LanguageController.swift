@@ -18,6 +18,9 @@ class LanguageController: UITableViewController, UIImagePickerControllerDelegate
         super.viewDidLoad()
         
         //Image/Title for Navigation
+//       let backgroundImage = UIImage(named: "CDP_LanguageWallpaper.png")
+//       let imageView = UIImageView(image: backgroundImage)
+//       self.tableView.backgroundView = imageView
         let iconImageView = UIImageView(image: UIImage(named: "languages"))
         self.navigationItem.titleView = iconImageView
         //setup context or delegate for fetching, retrieving, storing data

@@ -27,6 +27,14 @@
 		52CDBBEC244DF14000E7C7F7 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CDBBEB244DF14000E7C7F7 /* LoginController.swift */; };
 		52DC9135244F3EDC003043B0 /* Language.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DC9134244F3EDC003043B0 /* Language.storyboard */; };
 		52DC9137244F3EF6003043B0 /* LanguageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC9136244F3EF6003043B0 /* LanguageController.swift */; };
+		52DD40EB2450C45F000AC42A /* Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DD40EA2450C45F000AC42A /* Book.storyboard */; };
+		52DD40ED2450C46F000AC42A /* BookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD40EC2450C46F000AC42A /* BookController.swift */; };
+		52DD40F12450C5B9000AC42A /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD40F02450C5B9000AC42A /* BookTableViewCell.swift */; };
+		52DD40F52450C752000AC42A /* CDP_BooksWallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52DD40F22450C752000AC42A /* CDP_BooksWallpaper.jpg */; };
+		52DD40F62450C752000AC42A /* CDP_BookCellWallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52DD40F32450C752000AC42A /* CDP_BookCellWallpaper.jpg */; };
+		52DD40F72450C752000AC42A /* CDP_LanguageWallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52DD40F42450C752000AC42A /* CDP_LanguageWallpaper.jpg */; };
+		52F0A8AE2450CEBB00CF168E /* Books+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F0A8AC2450CEBB00CF168E /* Books+CoreDataClass.swift */; };
+		52F0A8AF2450CEBB00CF168E /* Books+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F0A8AD2450CEBB00CF168E /* Books+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +60,14 @@
 		52CDBBEB244DF14000E7C7F7 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		52DC9134244F3EDC003043B0 /* Language.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Language.storyboard; sourceTree = "<group>"; };
 		52DC9136244F3EF6003043B0 /* LanguageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageController.swift; sourceTree = "<group>"; };
+		52DD40EA2450C45F000AC42A /* Book.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Book.storyboard; sourceTree = "<group>"; };
+		52DD40EC2450C46F000AC42A /* BookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookController.swift; sourceTree = "<group>"; };
+		52DD40F02450C5B9000AC42A /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		52DD40F22450C752000AC42A /* CDP_BooksWallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CDP_BooksWallpaper.jpg; sourceTree = "<group>"; };
+		52DD40F32450C752000AC42A /* CDP_BookCellWallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CDP_BookCellWallpaper.jpg; sourceTree = "<group>"; };
+		52DD40F42450C752000AC42A /* CDP_LanguageWallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CDP_LanguageWallpaper.jpg; sourceTree = "<group>"; };
+		52F0A8AC2450CEBB00CF168E /* Books+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Books+CoreDataClass.swift"; sourceTree = "<group>"; };
+		52F0A8AD2450CEBB00CF168E /* Books+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Books+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,12 +100,9 @@
 		52CDBBCC244DEE2900E7C7F7 /* CoreDataPortfolio */ = {
 			isa = PBXGroup;
 			children = (
-				52C72532244DF9C900A54305 /* Account+CoreDataClass.swift */,
-				529D76072450A01C0033B77A /* Account+CoreDataProperties.swift */,
-				529D76032450A0070033B77A /* Language+CoreDataClass.swift */,
-				529D760D2450A5AB0033B77A /* Language+CoreDataProperties.swift */,
+				52DD40EE2450C57F000AC42A /* CoreDataClasses */,
 				52CDBBCD244DEE2900E7C7F7 /* AppDelegate.swift */,
-				529D760B2450A3180033B77A /* LanguageTableViewCell.swift */,
+				52DD40EF2450C5A0000AC42A /* Cells */,
 				52CDBBE6244DEFAE00E7C7F7 /* Images */,
 				52CDBBCF244DEE2900E7C7F7 /* SceneDelegate.swift */,
 				52CDBBE4244DEF7C00E7C7F7 /* ViewControllers */,
@@ -109,6 +122,7 @@
 				52CDBBEB244DF14000E7C7F7 /* LoginController.swift */,
 				52C72536244E2DBC00A54305 /* AccountController.swift */,
 				52DC9136244F3EF6003043B0 /* LanguageController.swift */,
+				52DD40EC2450C46F000AC42A /* BookController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -119,6 +133,7 @@
 				52CDBBD3244DEE2900E7C7F7 /* Main.storyboard */,
 				52CDBBE9244DF12900E7C7F7 /* Login.storyboard */,
 				52DC9134244F3EDC003043B0 /* Language.storyboard */,
+				52DD40EA2450C45F000AC42A /* Book.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -126,11 +141,36 @@
 		52CDBBE6244DEFAE00E7C7F7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				52DD40F32450C752000AC42A /* CDP_BookCellWallpaper.jpg */,
+				52DD40F22450C752000AC42A /* CDP_BooksWallpaper.jpg */,
+				52DD40F42450C752000AC42A /* CDP_LanguageWallpaper.jpg */,
 				52C72530244DF79300A54305 /* CDP_LoginWallpaper.jpg */,
 				52C72538244E2E9E00A54305 /* CDP_AccountWallpaper.jpg */,
 				52CDBBE7244DEFEF00E7C7F7 /* CDP_MainWallpaper.jpg */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		52DD40EE2450C57F000AC42A /* CoreDataClasses */ = {
+			isa = PBXGroup;
+			children = (
+				52C72532244DF9C900A54305 /* Account+CoreDataClass.swift */,
+				529D76072450A01C0033B77A /* Account+CoreDataProperties.swift */,
+				529D76032450A0070033B77A /* Language+CoreDataClass.swift */,
+				529D760D2450A5AB0033B77A /* Language+CoreDataProperties.swift */,
+				52F0A8AC2450CEBB00CF168E /* Books+CoreDataClass.swift */,
+				52F0A8AD2450CEBB00CF168E /* Books+CoreDataProperties.swift */,
+			);
+			path = CoreDataClasses;
+			sourceTree = "<group>";
+		};
+		52DD40EF2450C5A0000AC42A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				529D760B2450A3180033B77A /* LanguageTableViewCell.swift */,
+				52DD40F02450C5B9000AC42A /* BookTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,10 +233,14 @@
 			files = (
 				52CDBBDD244DEE2B00E7C7F7 /* LaunchScreen.storyboard in Resources */,
 				52CDBBDA244DEE2B00E7C7F7 /* Assets.xcassets in Resources */,
+				52DD40F72450C752000AC42A /* CDP_LanguageWallpaper.jpg in Resources */,
 				52C72539244E2E9E00A54305 /* CDP_AccountWallpaper.jpg in Resources */,
 				52C72531244DF79300A54305 /* CDP_LoginWallpaper.jpg in Resources */,
+				52DD40EB2450C45F000AC42A /* Book.storyboard in Resources */,
+				52DD40F52450C752000AC42A /* CDP_BooksWallpaper.jpg in Resources */,
 				52CDBBD5244DEE2900E7C7F7 /* Main.storyboard in Resources */,
 				52CDBBEA244DF12900E7C7F7 /* Login.storyboard in Resources */,
+				52DD40F62450C752000AC42A /* CDP_BookCellWallpaper.jpg in Resources */,
 				52DC9135244F3EDC003043B0 /* Language.storyboard in Resources */,
 				52CDBBE8244DEFEF00E7C7F7 /* CDP_MainWallpaper.jpg in Resources */,
 			);
@@ -209,12 +253,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52DD40F12450C5B9000AC42A /* BookTableViewCell.swift in Sources */,
 				52CDBBD2244DEE2900E7C7F7 /* ViewController.swift in Sources */,
+				52F0A8AF2450CEBB00CF168E /* Books+CoreDataProperties.swift in Sources */,
 				529D76082450A01C0033B77A /* Account+CoreDataProperties.swift in Sources */,
 				52C72534244DF9C900A54305 /* Account+CoreDataClass.swift in Sources */,
 				529D76052450A0070033B77A /* Language+CoreDataClass.swift in Sources */,
 				52DC9137244F3EF6003043B0 /* LanguageController.swift in Sources */,
 				52C72537244E2DBC00A54305 /* AccountController.swift in Sources */,
+				52F0A8AE2450CEBB00CF168E /* Books+CoreDataClass.swift in Sources */,
+				52DD40ED2450C46F000AC42A /* BookController.swift in Sources */,
 				52CDBBCE244DEE2900E7C7F7 /* AppDelegate.swift in Sources */,
 				52CDBBD0244DEE2900E7C7F7 /* SceneDelegate.swift in Sources */,
 				52CDBBD8244DEE2A00E7C7F7 /* CoreDataPortfolio.xcdatamodeld in Sources */,
