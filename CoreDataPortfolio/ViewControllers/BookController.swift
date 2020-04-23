@@ -21,8 +21,6 @@ class BookController: UITableViewController, UIImagePickerControllerDelegate, UI
     //       let backgroundImage = UIImage(named: "CDP_BooksWallpaper.png")
     //       let imageView = UIImageView(image: backgroundImage)
     //       self.tableView.backgroundView = imageView
-            let iconImageView = UIImageView(image: UIImage(named: "Bookss"))
-            self.navigationItem.titleView = iconImageView
             //setup context or delegate for fetching, retrieving, storing data
             managedObjContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
             
@@ -59,7 +57,7 @@ class BookController: UITableViewController, UIImagePickerControllerDelegate, UI
         override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             
             //cell refererence in Table View
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! BookTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "BookCell", for: indexPath) as! BookTableViewCell
             
             //row or object in data source
             let row = data[indexPath.row]
